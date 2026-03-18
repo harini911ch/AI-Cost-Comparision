@@ -1,0 +1,67 @@
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body class="travel-bg">
+<nav class="navbar">
+
+<h2 class="logo">AI Comparison Platform</h2>
+
+<div class="nav-links">
+
+<a href="/">Home</a>
+<a href="/domain">Domain</a>
+<a href="/travel">Travel</a>
+<a href="/food">Food</a>
+
+</div>
+
+</nav>
+<h1>Travel Price Comparison</h1>
+
+<p>Destination Selected: {{destination}}</p>
+
+<table>
+
+<tr>
+<th>Platform</th>
+<th>Bike</th>
+<th>Auto</th>
+<th>Car</th>
+</tr>
+
+<tr>
+<td>Ola</td>
+<td>{{ola_bike}}</td>
+<td>{{ola_auto}}</td>
+<td>{{ola_car}}</td>
+</tr>
+
+<tr>
+<td>Uber</td>
+<td>{{uber_bike}}</td>
+<td>{{uber_auto}}</td>
+<td>{{uber_car}}</td>
+</tr>
+
+<tr>
+<td>Rapido</td>
+<td>{{rapido_bike}}</td>
+<td>{{rapido_auto}}</td>
+<td>{{rapido_car}}</td>
+</tr>
+
+</table>
+
+<h2 class="ai-box">
+
+AI Recommendation:  
+The cheapest option for your trip is
+
+<b>{{best}}</b>
+
+</h2>
+
+</body>
+</html>

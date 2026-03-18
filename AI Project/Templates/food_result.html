@@ -1,0 +1,59 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body class="food-result-bg">
+
+<nav class="navbar">
+
+<h2 class="logo">AI Comparison Platform</h2>
+
+<div class="nav-links">
+
+<a href="/">Home</a>
+<a href="/domain">Domain</a>
+<a href="/travel">Travel</a>
+<a href="/food">Food</a>
+
+</div>
+
+</nav>
+
+
+<div class="food-container">
+
+<h1>{{item}} Price Comparison</h1>
+
+<table>
+
+<tr>
+
+<th>Restaurant</th>
+<th>Zomato</th>
+<th>Swiggy</th>
+
+</tr>
+
+{% for r,v in data.items() %}
+
+<tr>
+
+<td>{{r}}</td>
+<td>{{v["Zomato"]}}</td>
+<td>{{v["Swiggy"]}}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+
+</html>
